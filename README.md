@@ -13,8 +13,8 @@ cd Python-3.13.7
 ### 2. 安装依赖
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y \
+apt-get update
+apt-get install -y \
     build-essential \
     libssl-dev zlib1g-dev \
     libncurses5-dev libncursesw5-dev \
@@ -45,7 +45,7 @@ sudo apt-get install -y \
 
 ```bash
 make -j$(nproc)     # 并行编译，速度更快
-sudo make altinstall
+make altinstall
 ```
 
 > ⚠️ 建议用 `make altinstall`，避免覆盖系统默认的 `python3`。
@@ -55,8 +55,8 @@ sudo make altinstall
 ### 5. 建立软链接
 
 ```bash
-sudo ln -sf /usr/local/python3.13/bin/python3.13 /usr/local/bin/python3.13
-sudo ln -sf /usr/local/python3.13/bin/pip3.13 /usr/local/bin/pip3.13
+ln -sf /usr/local/python3.13/bin/python3.13 /usr/local/bin/python3.13
+ln -sf /usr/local/python3.13/bin/pip3.13 /usr/local/bin/pip3.13
 ```
 
 ---
